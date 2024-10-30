@@ -12,6 +12,7 @@ const HomePage = () => {
   
   return (
     <>
+      <Navigation />
       <Hero />
       <About />
       <section id="education" className="section-padding bg-muted/30">
@@ -26,7 +27,14 @@ const HomePage = () => {
               >
                 <h4 className="text-xl font-semibold text-card-foreground">{edu.degree}</h4>
                 <p className="text-primary font-medium">{edu.institution}</p>
-                <p className="text-muted-foreground text-sm">{edu.period}</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-muted-foreground text-sm">{edu.period}</p>
+                  {edu.gpa && (
+                    <span className="text-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                      GPA: {edu.gpa}
+                    </span>
+                  )}
+                </div>
                 <p className="mt-2 text-card-foreground">{edu.description}</p>
               </div>
             ))}
@@ -62,7 +70,6 @@ const HomePage = () => {
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>

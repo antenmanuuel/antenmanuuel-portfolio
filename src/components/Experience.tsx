@@ -19,6 +19,7 @@ const Experience = () => {
       degree: "Bachelor of Science in Computer Science",
       institution: "University Name",
       period: "2020 - 2024",
+      gpa: "3.8/4.0",
       description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems"
     },
     {
