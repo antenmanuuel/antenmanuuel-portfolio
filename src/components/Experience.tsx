@@ -29,43 +29,7 @@ const Experience = () => {
     }
   ];
 
-  return (
-    <section className="section-padding bg-background">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Experience & Education</h2>
-        
-        <div className="space-y-12">
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 text-primary">Work Experience</h3>
-            <div className="space-y-6">
-              {workExperience.map((job, index) => (
-                <div key={index} className="bg-card p-6 rounded-lg border border-border">
-                  <h4 className="text-xl font-semibold text-card-foreground">{job.title}</h4>
-                  <p className="text-primary font-medium">{job.company}</p>
-                  <p className="text-muted-foreground text-sm">{job.period}</p>
-                  <p className="mt-2 text-card-foreground">{job.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 text-primary">Education</h3>
-            <div className="space-y-6">
-              {education.map((edu, index) => (
-                <div key={index} className="bg-card p-6 rounded-lg border border-border">
-                  <h4 className="text-xl font-semibold text-card-foreground">{edu.degree}</h4>
-                  <p className="text-primary font-medium">{edu.institution}</p>
-                  <p className="text-muted-foreground text-sm">{edu.period}</p>
-                  <p className="mt-2 text-card-foreground">{edu.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return { education, workExperience };
 };
 
 export default Experience;

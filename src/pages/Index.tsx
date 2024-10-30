@@ -7,16 +7,49 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 
-const HomePage = () => (
-  <>
-    <Hero />
-    <About />
-    <Skills />
-    <Projects />
-    <Experience />
-    <Contact />
-  </>
-);
+const HomePage = () => {
+  const { education, workExperience } = Experience();
+  
+  return (
+    <>
+      <Hero />
+      <About />
+      <section id="education" className="section-padding bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Education</h2>
+          <div className="space-y-6">
+            {education.map((edu, index) => (
+              <div key={index} className="bg-card p-6 rounded-lg border border-border">
+                <h4 className="text-xl font-semibold text-card-foreground">{edu.degree}</h4>
+                <p className="text-primary font-medium">{edu.institution}</p>
+                <p className="text-muted-foreground text-sm">{edu.period}</p>
+                <p className="mt-2 text-card-foreground">{edu.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="work-experience" className="section-padding bg-background">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Work Experience</h2>
+          <div className="space-y-6">
+            {workExperience.map((job, index) => (
+              <div key={index} className="bg-card p-6 rounded-lg border border-border">
+                <h4 className="text-xl font-semibold text-card-foreground">{job.title}</h4>
+                <p className="text-primary font-medium">{job.company}</p>
+                <p className="text-muted-foreground text-sm">{job.period}</p>
+                <p className="mt-2 text-card-foreground">{job.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <Skills />
+      <Projects />
+      <Contact />
+    </>
+  );
+};
 
 const Index = () => {
   return (

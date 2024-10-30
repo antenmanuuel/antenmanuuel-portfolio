@@ -20,9 +20,10 @@ const Navigation = () => {
         <div className="flex items-center space-x-8">
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
+            <a href="#education" className="hover:text-primary transition-colors">Education</a>
+            <a href="#work-experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
             <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
-            <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
           <ThemeToggle />
