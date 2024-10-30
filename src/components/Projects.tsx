@@ -24,14 +24,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-white">
+    <section id="projects" className="section-padding bg-background">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+              className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-border"
             >
               <img 
                 src={project.image} 
@@ -39,13 +39,13 @@ const Projects = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>

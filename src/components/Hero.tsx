@@ -1,18 +1,18 @@
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="container mx-auto px-4 pt-20 animate-fade-in">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               Hi, I'm <span className="text-primary">Your Name</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               A recent graduate passionate about creating impactful solutions through technology
             </p>
             <a 
               href="#contact"
-              className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
             >
               Get in Touch
             </a>
