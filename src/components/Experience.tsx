@@ -17,16 +17,10 @@ const Experience = () => {
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "University Name",
+      institution: "Stony Brook University",
       period: "2020 - 2024",
       gpa: "3.8/4.0",
       description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems"
-    },
-    {
-      degree: "High School Diploma",
-      institution: "High School Name",
-      period: "2016 - 2020",
-      description: "Graduated with honors, Computer Science Club President"
     }
   ];
 
