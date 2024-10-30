@@ -7,8 +7,8 @@ const Resume = () => {
 
   const handleDownload = () => {
     setIsLoading(true);
-    // Replace this URL with your actual resume PDF URL
-    const pdfUrl = "/path-to-your-resume.pdf";
+    // Using a sample resume PDF from Adobe
+    const pdfUrl = "https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf";
     window.open(pdfUrl, "_blank");
     setIsLoading(false);
   };
@@ -30,7 +30,7 @@ const Resume = () => {
           </div>
           <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
             <iframe
-              src="/path-to-your-resume.pdf#view=FitH"
+              src="https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf#view=FitH"
               className="w-full h-[800px]"
               title="Resume PDF"
             />
