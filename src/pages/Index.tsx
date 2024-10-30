@@ -5,7 +5,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Resume from "../components/Resume";
+import Experience from "../components/Experience";
 
 const HomePage = () => (
   <>
@@ -13,6 +13,7 @@ const HomePage = () => (
     <About />
     <Skills />
     <Projects />
+    <Experience />
     <Contact />
   </>
 );
@@ -23,7 +24,6 @@ const Index = () => {
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
   );
