@@ -1,3 +1,5 @@
+import { Github, Linkedin } from "lucide-react";
+
 const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-gray-50">
@@ -20,25 +22,19 @@ const Contact = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors flex items-center gap-2"
               >
+                <Linkedin className="w-5 h-5" />
                 LinkedIn
               </a>
               <a 
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors flex items-center gap-2"
               >
+                <Github className="w-5 h-5" />
                 GitHub
-              </a>
-              <a 
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
-              >
-                Twitter
               </a>
             </div>
           </div>
