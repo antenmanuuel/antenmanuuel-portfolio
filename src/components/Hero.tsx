@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Hi, I'm <span className="text-primary hover:scale-105 transition-transform inline-block">Your Name</span>
+              Hi, I'm <span className="text-primary hover:scale-105 transition-transform inline-block">Anten Manuuel</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               A recent graduate passionate about creating impactful solutions through technology
