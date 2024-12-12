@@ -26,18 +26,22 @@ const Projects = () => {
   return (
     <section id="projects" className="section-padding bg-background">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Projects</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground animate-fade-in">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-border"
+              className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-border animate-fade-in hover:scale-105"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative overflow-hidden group">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
@@ -45,7 +49,8 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
+                      className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm animate-fade-in"
+                      style={{ animationDelay: `${(index * 200) + (techIndex * 100)}ms` }}
                     >
                       {tech}
                     </span>
@@ -53,11 +58,12 @@ const Projects = () => {
                 </div>
                 <a 
                   href={project.link}
-                  className="text-primary hover:text-primary/80 font-medium"
+                  className="text-primary hover:text-primary/80 font-medium inline-flex items-center group"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project →
+                  View Project 
+                  <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
                 </a>
               </div>
             </div>

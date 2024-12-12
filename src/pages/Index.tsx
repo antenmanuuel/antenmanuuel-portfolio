@@ -41,7 +41,11 @@ const HomePage = () => {
                     <h5 className="text-sm font-semibold text-primary mb-2">Key Achievements:</h5>
                     <ul className="list-disc list-inside space-y-1">
                       {edu.achievements.map((achievement, i) => (
-                        <li key={i} className="text-sm text-muted-foreground">
+                        <li 
+                          key={i} 
+                          className="text-sm text-muted-foreground animate-fade-in"
+                          style={{ animationDelay: `${(index * 200) + (i * 100)}ms` }}
+                        >
                           {achievement}
                         </li>
                       ))}
