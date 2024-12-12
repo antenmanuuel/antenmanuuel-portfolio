@@ -1,3 +1,5 @@
+import { TypeAnimation } from 'react-type-animation';
+
 const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
@@ -5,11 +7,29 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Hi, I'm <span className="text-primary hover:scale-105 transition-transform inline-block">Anten Manuuel</span>
+              Hi, I'm{" "}
+              <span className="text-primary hover:scale-105 transition-transform inline-block">
+                Anten Manuuel
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              A recent graduate passionate about creating impactful solutions through technology
-            </p>
+            <div className="text-xl md:text-2xl text-muted-foreground mb-8 h-[60px]">
+              <TypeAnimation
+                sequence={[
+                  'A recent graduate',
+                  1000,
+                  'A Full Stack Developer',
+                  1000,
+                  'Passionate about technology',
+                  1000,
+                  'Ready to make an impact',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="font-medium"
+              />
+            </div>
             <a 
               href="#contact"
               className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all hover:scale-105 hover:shadow-lg"

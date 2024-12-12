@@ -18,35 +18,40 @@ const HomePage = () => {
       <section id="education" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground animate-fade-in">Education</h2>
-          <div className="space-y-6">
+          <div className="space-y-8">
             {education.map((edu, index) => (
               <div 
                 key={index} 
-                className="bg-card p-6 rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in"
+                className="bg-card p-8 rounded-xl border border-border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] animate-fade-in group"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <h4 className="text-xl font-semibold text-card-foreground">{edu.degree}</h4>
-                <p className="text-primary font-medium">{edu.institution}</p>
-                <div className="flex items-center gap-2 mb-3">
-                  <p className="text-muted-foreground text-sm">{edu.period}</p>
-                  {edu.gpa && (
-                    <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
-                      GPA: {edu.gpa}
-                    </span>
-                  )}
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-2xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">{edu.degree}</h4>
+                    <p className="text-xl text-foreground/80 font-medium">{edu.institution}</p>
+                  </div>
+                  <div className="mt-2 md:mt-0 flex flex-col md:items-end">
+                    <p className="text-muted-foreground">{edu.period}</p>
+                    {edu.gpa && (
+                      <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mt-2">
+                        GPA: {edu.gpa}
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <p className="mt-2 text-card-foreground mb-4">{edu.description}</p>
+                <p className="text-muted-foreground mb-6">{edu.description}</p>
                 {edu.achievements && (
-                  <div className="mt-4">
-                    <h5 className="text-sm font-semibold text-primary mb-2">Key Achievements:</h5>
-                    <ul className="list-disc list-inside space-y-1">
+                  <div className="space-y-4">
+                    <h5 className="text-lg font-semibold text-primary">Key Achievements</h5>
+                    <ul className="grid gap-3">
                       {edu.achievements.map((achievement, i) => (
                         <li 
                           key={i} 
-                          className="text-sm text-muted-foreground animate-fade-in"
+                          className="flex items-start gap-3 animate-fade-in"
                           style={{ animationDelay: `${(index * 200) + (i * 100)}ms` }}
                         >
-                          {achievement}
+                          <span className="text-primary mt-1">•</span>
+                          <span className="text-muted-foreground">{achievement}</span>
                         </li>
                       ))}
                     </ul>
@@ -60,19 +65,34 @@ const HomePage = () => {
       <section id="work-experience" className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground animate-fade-in">Work Experience</h2>
-          <div className="space-y-6">
-            {workExperience.map((job, index) => (
-              <div 
-                key={index} 
-                className="bg-card p-6 rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-[1.02] animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <h4 className="text-xl font-semibold text-card-foreground">{job.title}</h4>
-                <p className="text-primary font-medium">{job.company}</p>
-                <p className="text-muted-foreground text-sm">{job.period}</p>
-                <p className="mt-2 text-card-foreground">{job.description}</p>
-              </div>
-            ))}
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30"></div>
+            
+            <div className="space-y-12">
+              {workExperience.map((job, index) => (
+                <div 
+                  key={index}
+                  className={`relative flex flex-col ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } gap-8 animate-fade-in`}
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  {/* Timeline dot */}
+                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full"></div>
+                  
+                  {/* Content */}
+                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+                    <div className="bg-card p-6 rounded-xl border border-border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group">
+                      <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">{job.title}</h4>
+                      <p className="text-lg font-medium text-foreground/80 mb-2">{job.company}</p>
+                      <p className="text-sm text-muted-foreground mb-4">{job.period}</p>
+                      <p className="text-muted-foreground">{job.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
