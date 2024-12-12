@@ -1,26 +1,31 @@
 const Experience = () => {
-  const workExperience = [
-    {
-      title: "Software Engineer Intern",
-      company: "Tech Company",
-      period: "June 2023 - August 2023",
-      description: "Worked on developing and maintaining web applications using React and Node.js. Collaborated with senior developers on various projects."
-    },
-    {
-      title: "Web Development Intern",
-      company: "Digital Agency",
-      period: "January 2023 - April 2023",
-      description: "Assisted in building responsive websites and implementing UI/UX designs. Gained experience with modern web technologies."
-    }
-  ];
-
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "Stony Brook University",
       period: "2020 - 2024",
       gpa: "3.8/4.0",
-      description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems"
+      description: "Specialized in Software Engineering and Full-Stack Development. Completed advanced coursework in Data Structures & Algorithms, Operating Systems, Database Management, Web Technologies, and Machine Learning. Active member of the Computer Science Society and participated in various hackathons.",
+      achievements: [
+        "Dean's List recipient for consecutive semesters",
+        "Undergraduate Research Assistant in AI/ML Lab",
+        "Led team projects in Software Engineering practicum"
+      ]
+    }
+  ];
+
+  const workExperience = [
+    {
+      title: "Software Engineering Intern",
+      company: "Tech Solutions Inc.",
+      period: "Summer 2023",
+      description: "Contributed to the development of a web application using React and Node.js. Collaborated with cross-functional teams to enhance user experience and optimize performance."
+    },
+    {
+      title: "Freelance Web Developer",
+      company: "Self-Employed",
+      period: "2022 - Present",
+      description: "Designed and developed responsive websites for various clients, focusing on user-friendly interfaces and SEO optimization."
     }
   ];
 

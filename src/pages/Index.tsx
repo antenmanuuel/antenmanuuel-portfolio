@@ -27,15 +27,27 @@ const HomePage = () => {
               >
                 <h4 className="text-xl font-semibold text-card-foreground">{edu.degree}</h4>
                 <p className="text-primary font-medium">{edu.institution}</p>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 mb-3">
                   <p className="text-muted-foreground text-sm">{edu.period}</p>
                   {edu.gpa && (
-                    <span className="text-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                    <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
                       GPA: {edu.gpa}
                     </span>
                   )}
                 </div>
-                <p className="mt-2 text-card-foreground">{edu.description}</p>
+                <p className="mt-2 text-card-foreground mb-4">{edu.description}</p>
+                {edu.achievements && (
+                  <div className="mt-4">
+                    <h5 className="text-sm font-semibold text-primary mb-2">Key Achievements:</h5>
+                    <ul className="list-disc list-inside space-y-1">
+                      {edu.achievements.map((achievement, i) => (
+                        <li key={i} className="text-sm text-muted-foreground">
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             ))}
           </div>
