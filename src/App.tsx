@@ -12,7 +12,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <TooltipProvider>
-        <div className="min-h-screen bg-background text-foreground">
+        <main className="min-h-screen bg-background text-foreground">
           <Toaster />
           <Sonner />
           <BrowserRouter>
@@ -20,7 +20,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
             </Routes>
           </BrowserRouter>
-        </div>
+        </main>
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
