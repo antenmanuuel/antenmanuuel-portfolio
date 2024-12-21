@@ -5,11 +5,17 @@ const Experience = () => {
       institution: "Stony Brook University",
       period: "2020 - 2024",
       gpa: "3.8/4.0",
-      description: "Specialized in Software Engineering and Full-Stack Development. Completed advanced coursework in Data Structures & Algorithms, Operating Systems, Database Management, Web Technologies, and Machine Learning. Active member of the Computer Science Society and participated in various hackathons.",
-      achievements: [
-        "Dean's List recipient for consecutive semesters",
-        "Undergraduate Research Assistant in AI/ML Lab",
-        "Led team projects in Software Engineering practicum"
+      specialization: "Software Engineering and Full-Stack Development",
+      coursework: [
+        "Data Structures & Algorithms",
+        "Operating Systems",
+        "Database Management",
+        "Web Technologies",
+        "Machine Learning"
+      ],
+      activities: [
+        "Computer Science Society member",
+        "Participated in various hackathons"
       ]
     }
   ];

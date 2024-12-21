@@ -62,7 +62,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project 
+                  View Github 
                   <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
                 </a>
               </div>

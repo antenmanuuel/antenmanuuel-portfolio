@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
+import { FileText } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,6 +30,15 @@ const Navigation = () => {
                 {item.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
               </a>
             ))}
+            <a 
+              href="https://drive.google.com/your-resume-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105 animate-fade-in"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </a>
           </div>
           <ThemeToggle />
         </div>
