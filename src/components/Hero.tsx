@@ -3,8 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
   return (
     <section className="section-padding pt-32">
-      <div className="max-w-3xl">
-        <div className="flex items-center gap-6 mb-8">
+      <div className="max-w-3xl mx-auto text-center">
+        <div className="flex flex-col items-center gap-6 mb-8">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary flex-shrink-0">
             <img
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3"
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+        <p className="text-lg text-muted-foreground mb-8 mx-auto max-w-2xl">
           Recent Computer Science graduate passionate about building impactful web applications 
           and solving complex problems through elegant solutions.
         </p>
