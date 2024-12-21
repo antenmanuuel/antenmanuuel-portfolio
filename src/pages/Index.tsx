@@ -39,24 +39,37 @@ const HomePage = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-6">{edu.description}</p>
-                {edu.achievements && (
-                  <div className="space-y-4">
-                    <h5 className="text-lg font-semibold text-primary">Key Achievements</h5>
-                    <ul className="grid gap-3">
-                      {edu.achievements.map((achievement, i) => (
-                        <li 
-                          key={i} 
-                          className="flex items-start gap-3 animate-fade-in"
-                          style={{ animationDelay: `${(index * 200) + (i * 100)}ms` }}
-                        >
-                          <span className="text-primary mt-1">•</span>
-                          <span className="text-muted-foreground">{achievement}</span>
+                
+                <div className="space-y-4 mt-6">
+                  <div>
+                    <h5 className="text-lg font-semibold text-primary mb-2">Specialization</h5>
+                    <p className="text-muted-foreground">{edu.specialization}</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="text-lg font-semibold text-primary mb-2">Key Coursework</h5>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {edu.coursework.map((course, i) => (
+                        <li key={i} className="text-muted-foreground flex items-center gap-2">
+                          <span className="text-primary">•</span>
+                          {course}
                         </li>
                       ))}
                     </ul>
                   </div>
-                )}
+                  
+                  <div>
+                    <h5 className="text-lg font-semibold text-primary mb-2">Activities</h5>
+                    <ul className="space-y-2">
+                      {edu.activities.map((activity, i) => (
+                        <li key={i} className="text-muted-foreground flex items-center gap-2">
+                          <span className="text-primary">•</span>
+                          {activity}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

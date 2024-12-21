@@ -3,21 +3,18 @@ const Projects = () => {
     {
       title: "Project 1",
       description: "A brief description of your first project. What problems did it solve? What technologies did you use?",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3",
       technologies: ["React", "Node.js", "MongoDB"],
       link: "#"
     },
     {
       title: "Project 2",
       description: "Description of your second project. Highlight the key features and your role in development.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3",
       technologies: ["Python", "Django", "PostgreSQL"],
       link: "#"
     },
     {
       title: "Project 3",
       description: "Overview of your third project. What was the goal? What did you learn from this experience?",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3",
       technologies: ["TypeScript", "Next.js", "Tailwind CSS"],
       link: "#"
     }
@@ -34,14 +31,6 @@ const Projects = () => {
               className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-border animate-fade-in hover:scale-105"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="relative overflow-hidden group">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
