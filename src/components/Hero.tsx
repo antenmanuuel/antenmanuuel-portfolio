@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="section-padding pt-32">
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center gap-6 mb-8">
-          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary flex-shrink-0">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-primary flex-shrink-0">
             <img
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3"
               alt="Profile"
