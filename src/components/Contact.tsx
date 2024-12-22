@@ -1,4 +1,4 @@
-import { Github, Linkedin, Phone } from "lucide-react";
+import { Github, Linkedin, Phone, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,28 +10,30 @@ const Contact = () => {
             I'm currently looking for new opportunities and would love to hear from you.
             Whether you have a question or just want to say hi, feel free to reach out!
           </p>
-          <div className="space-y-4">
-            <a 
-              href="mailto:your.email@example.com"
-              className="block bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 animate-fade-in [animation-delay:400ms] hover:scale-105 hover:shadow-lg"
-            >
-              Send me an email
-            </a>
-            <a 
-              href="tel:+1234567890"
-              className="block bg-secondary text-secondary-foreground px-8 py-3 rounded-lg hover:bg-secondary/90 transition-all duration-300 animate-fade-in [animation-delay:500ms] hover:scale-105 hover:shadow-lg"
-            >
-              <span className="flex items-center justify-center gap-2">
+          <div className="space-y-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in [animation-delay:400ms]">
+              <a 
+                href="mailto:your.email@example.com"
+                className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              >
+                <Mail className="w-5 h-5" />
+                Send Email
+              </a>
+              <a 
+                href="tel:+1234567890"
+                className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              >
                 <Phone className="w-5 h-5" />
-                +1 (234) 567-890
-              </span>
-            </a>
-            <div className="flex justify-center space-x-6 mt-8">
+                Call Me
+              </a>
+            </div>
+            
+            <div className="flex justify-center gap-4 animate-fade-in [animation-delay:600ms]">
               <a 
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 animate-fade-in [animation-delay:600ms] hover:scale-110"
+                className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#0077B5]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
@@ -40,7 +42,7 @@ const Contact = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 animate-fade-in [animation-delay:800ms] hover:scale-110"
+                className="flex items-center gap-2 bg-[#333] text-white px-6 py-3 rounded-lg hover:bg-[#333]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <Github className="w-5 h-5" />
                 GitHub
