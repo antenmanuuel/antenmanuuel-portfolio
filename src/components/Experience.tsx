@@ -25,13 +25,23 @@ const Experience = () => {
       title: "Software Engineering Intern",
       company: "Tech Solutions Inc.",
       period: "Summer 2023",
-      description: "Contributed to the development of a web application using React and Node.js. Collaborated with cross-functional teams to enhance user experience and optimize performance."
+      achievements: [
+        "Developed and maintained web applications using React and Node.js",
+        "Collaborated with cross-functional teams to enhance user experience",
+        "Implemented performance optimizations resulting in 30% faster load times",
+        "Participated in code reviews and agile development processes"
+      ]
     },
     {
       title: "Freelance Web Developer",
       company: "Self-Employed",
       period: "2022 - Present",
-      description: "Designed and developed responsive websites for various clients, focusing on user-friendly interfaces and SEO optimization."
+      achievements: [
+        "Designed and developed responsive websites for multiple clients",
+        "Implemented SEO best practices to improve client site rankings",
+        "Managed client relationships and project timelines effectively",
+        "Provided ongoing maintenance and support for client websites"
+      ]
     }
   ];
 

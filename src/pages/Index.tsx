@@ -100,7 +100,14 @@ const HomePage = () => {
                       <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">{job.title}</h4>
                       <p className="text-lg font-medium text-foreground/80 mb-2">{job.company}</p>
                       <p className="text-sm text-muted-foreground mb-4">{job.period}</p>
-                      <p className="text-muted-foreground">{job.description}</p>
+                      <ul className="space-y-2">
+                        {job.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start gap-2 text-muted-foreground">
+                            <span className="text-primary mt-1">•</span>
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
