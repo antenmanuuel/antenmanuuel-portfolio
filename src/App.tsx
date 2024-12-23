@@ -9,21 +9,21 @@ import Index from "./pages/Index";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <TooltipProvider>
-        <main className="min-h-screen bg-background text-foreground">
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
+  <BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <TooltipProvider>
+          <main className="min-h-screen bg-background text-foreground">
+            <Toaster />
+            <Sonner />
             <Routes>
               <Route path="/" element={<Index />} />
             </Routes>
-          </BrowserRouter>
-        </main>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
+          </main>
+        </TooltipProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
+  </BrowserRouter>
 );
 
 export default App;
