@@ -21,6 +21,8 @@ const Hero = () => {
                 sequence={[
                   'Aspiring Software Engineer',
                   1000,
+                    'Former Walgreens Software Engineer Intern',
+                    1000,
                   'Computer Science Student',
                   1000,
                   'Full Stack Developer',
