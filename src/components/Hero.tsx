@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-6 mb-8">
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5">
             <img
-              src="src/images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />
