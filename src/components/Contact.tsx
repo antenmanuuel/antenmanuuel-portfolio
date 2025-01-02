@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useToast } from "../components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast.ts";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
-import { Github, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -14,11 +14,8 @@ const Contact = () => {
 
     // Create form data object
     const form = e.currentTarget;
-    const formData = new FormData(form);
-
+    new FormData(form);
     try {
-      // Submit the form using the native form submission
-      // This avoids the AJAX restrictions from Formspree
       form.submit();
       
       toast({
@@ -91,7 +88,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary text-primary-foreground py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
+                className="w-full bg-primary text-white text-primary-foreground py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -106,22 +103,23 @@ const Contact = () => {
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a
-                  href="https://github.com/antenmanuuel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#333] text-white px-6 py-3 rounded-lg hover:bg-[#333]/90 transition-all duration-300"
+                    href="https://www.linkedin.com/in/anten-manuuel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#0077B5]/90 transition-all duration-300"
                 >
-                  <Github className="w-5 h-5" />
-                  GitHub
+                  <Linkedin className="w-5 h-5"/>
+                  LinkedIn
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/anten-manuuel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#0077B5]/90 transition-all duration-300"
+                    href="tel:+16312027772"
+                    className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#0077B5]/90 transition-all duration-300"
                 >
-                  <Linkedin className="w-5 h-5" />
-                  LinkedIn
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21c1.12.45 2.33.69 3.58.69.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.29 22 2 13.71 2 3.5 2 2.95 2.45 2.5 3 2.5H6.5c.55 0 1 .45 1 1 0 1.25.24 2.46.69 3.58.14.34.07.73-.21 1.11l-2.2 2.2z"/>
+                  </svg>
+                  +1 (631) 202-7772
                 </a>
               </div>
             </div>
