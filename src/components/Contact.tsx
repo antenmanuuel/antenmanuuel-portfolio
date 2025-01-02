@@ -49,16 +49,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-blue-50">
+    <section id="contact" className="section-padding bg-background">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground animate-fade-in">
           Get in Touch
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="bg-card p-6 rounded-xl shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
                   Name
                 </label>
                 <Input
@@ -70,7 +70,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">
                   Email
                 </label>
                 <Input
@@ -83,7 +83,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">
                   Message
                 </label>
                 <Textarea
@@ -97,7 +97,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+                className="w-full bg-primary text-primary-foreground py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -106,8 +106,8 @@ const Contact = () => {
           
           <div className="flex flex-col justify-center space-y-6">
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Connect With Me</h3>
+              <p className="text-muted-foreground mb-6">
                 Feel free to reach out through the form or connect with me on social media.
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
