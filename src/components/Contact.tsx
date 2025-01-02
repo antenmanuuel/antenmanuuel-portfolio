@@ -12,31 +12,20 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      message: formData.get('message') as string,
-    };
+    // Create form data object
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/mqaagkrn', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+      // Submit the form using the native form submission
+      // This avoids the AJAX restrictions from Formspree
+      form.submit();
+      
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
       });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for reaching out. I'll get back to you soon.",
-        });
-        e.currentTarget.reset();
-      } else {
-        throw new Error('Failed to send message');
-      }
+      form.reset();
     } catch (error) {
       toast({
         variant: "destructive",
@@ -56,7 +45,12 @@ const Contact = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-card p-6 rounded-xl shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              action="https://formspree.io/f/mqaagkrn"
+              method="POST"
+              onSubmit={handleSubmit} 
+              className="space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
                   Name
