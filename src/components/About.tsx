@@ -9,7 +9,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
               <div className="relative aspect-square rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  src="src/images/me.jpeg"
                   alt="About Me" 
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"
                 />

@@ -1,22 +1,22 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Project 1",
-      description: "A brief description of your first project. What problems did it solve? What technologies did you use?",
-      technologies: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      title: "Medical360",
+      description: "A hospital management tool for real-time resource tracking and staff coordination. Features instant updates with Socket.IO, deployed on Heroku using CI/CD pipelines for seamless updates and high reliability.",
+      technologies: ["React", "Node.js", "MongoDB", "Node.js", "Socket.io", "Heroku", "Github CI/CD"],
+      link: "https://github.com/antenmanuuel/Medical360"
     },
     {
-      title: "Project 2",
-      description: "Description of your second project. Highlight the key features and your role in development.",
-      technologies: ["Python", "Django", "PostgreSQL"],
-      link: "#"
+      title: "Word Hunt",
+      description: "A multiplayer word puzzle game featuring real-time chat, score tracking, and instant user retrieval with cookies. Utilizes RESTful APIs and WebSocket with Socket.IO for fast, responsive gameplay and smooth player interactions.",
+      technologies: ["React.js", "Express.js", "MongoDB", "Node.js", "Heroku", "Tailwind CSS"],
+      link: "https://github.com/Ifore134/WordHunt"
     },
     {
-      title: "Project 3",
-      description: "Overview of your third project. What was the goal? What did you learn from this experience?",
-      technologies: ["TypeScript", "Next.js", "Tailwind CSS"],
-      link: "#"
+      title: "Dev Collab Net",
+      description: "A StackOverflow-inspired platform with reputation scoring, user profiles, tagging, and comments to foster community engagement. Features a scalable RESTful API for fast interactions and secure user authentication with bcrypt and custom middleware.",
+      technologies: ["React.js", "Express.js", "MongoDB", "Node.js"],
+      link: "https://github.com/antenmanuuel/DevCollabNet"
     }
   ];
 

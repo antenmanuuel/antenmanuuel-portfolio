@@ -1,9 +1,9 @@
 const Skills = () => {
   const skills = [
-    { category: "Programming Languages", items: ["JavaScript", "TypeScript", "Python", "Java"] },
-    { category: "Web Technologies", items: ["React", "Node.js", "HTML5", "CSS3"] },
-    { category: "Tools & Platforms", items: ["Git", "Docker", "AWS", "VS Code"] },
-    { category: "Soft Skills", items: ["Problem Solving", "Team Collaboration", "Communication", "Time Management"] }
+    { category: "Programming Languages", items: ["C", "C++", "Python", "Java", "HTML", "CSS3", "JavaScript", "TypeScript", "SQL"] },
+    { category: "Frameworks/Libraries", items: ["React.js", "Node.js", "Express.js", "Spring Boot"] },
+    { category: "Tools", items: ["Git", "Docker", "Postman", "Heroku", "Monday.com", "Microsoft Azure", "Google Cloud Platform"] },
+    { category: "Database", items: ["MySQL", "MongoDB", "Oracle DB", "PostgreSQL"] }
   ];
 
   return (

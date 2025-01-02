@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import React, { useState } from "react";
+import { useToast } from "../components/ui/use-toast";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
 import { Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
@@ -14,13 +14,13 @@ const Contact = () => {
 
     const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message'),
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      message: formData.get('message') as string,
     };
 
     try {
-      const response = await fetch('https://formspree.io/f/your-form-id', {
+      const response = await fetch('https://formspree.io/f/mqaagkrn', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          
+
           <div className="flex flex-col justify-center space-y-6">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-semibold mb-4 text-foreground">Connect With Me</h3>
@@ -112,7 +112,7 @@ const Contact = () => {
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/antenmanuuel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-[#333] text-white px-6 py-3 rounded-lg hover:bg-[#333]/90 transition-all duration-300"
@@ -121,7 +121,7 @@ const Contact = () => {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anten-manuuel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#0077B5]/90 transition-all duration-300"

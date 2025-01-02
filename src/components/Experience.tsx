@@ -3,46 +3,40 @@ const Experience = () => {
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "Stony Brook University",
-      period: "2020 - 2024",
-      gpa: "3.8/4.0",
-      specialization: "Software Engineering and Full-Stack Development",
+      period: "Spring 2022 - May 2025",
+      gpa: "3.43/4.0",
+      specialization: "Artificial Intelligence and Data Science",
       coursework: [
-        "Data Structures & Algorithms",
-        "Operating Systems",
-        "Database Management",
-        "Web Technologies",
-        "Machine Learning"
+        "System Fundamentals I",
+        "System Fundamentals II",
+        "Object-Oriented Programming",
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Analysis of Algorithms",
+        "Software Engineering",
+        "Computer Networks",
+        "Scripting Languages",
+        "Intro to Data Science"
       ],
       activities: [
-        "Computer Science Society member",
-        "Participated in various hackathons"
+        "Stony Brook Computing Society - Member",
+        "Artificial Intelligence Club - Member",
       ]
     }
   ];
 
   const workExperience = [
     {
-      title: "Software Engineering Intern",
-      company: "Tech Solutions Inc.",
-      period: "Summer 2023",
+      title: "Software Engineer Intern",
+      company: "Walgreens",
+      period: "June 2024 - August 2024",
       achievements: [
-        "Developed and maintained web applications using React and Node.js",
-        "Collaborated with cross-functional teams to enhance user experience",
-        "Implemented performance optimizations resulting in 30% faster load times",
-        "Participated in code reviews and agile development processes"
+        "Developed and delivered a reconciliation reporting tool prototype using React.js, which reduced Tableau license costs by $30,000 annually. This tool enabled the Production Support team to resolve critical Pharma Reporting issues for Walgreens Specialty.",
+        "Integrated data from multiple source systems into a single, accurate report view, addressing non-functional requirements and improving report clarity and generation time by 25%. This solution introduced newer technology to the engineering team and enriched data quality.",
+        "Executed regression testing for assigned microservices using Postman, validating API reliability and ensuring seamless data sharing with major Pharma companies for metastatic assessments and medication surveys.",
+
       ]
     },
-    {
-      title: "Freelance Web Developer",
-      company: "Self-Employed",
-      period: "2022 - Present",
-      achievements: [
-        "Designed and developed responsive websites for multiple clients",
-        "Implemented SEO best practices to improve client site rankings",
-        "Managed client relationships and project timelines effectively",
-        "Provided ongoing maintenance and support for client websites"
-      ]
-    }
   ];
 
   return { education, workExperience };
