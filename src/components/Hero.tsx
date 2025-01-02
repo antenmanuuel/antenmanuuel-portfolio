@@ -1,5 +1,4 @@
 import { TypeAnimation } from 'react-type-animation';
-import { Waves } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
             <div className="text-xl text-muted-foreground h-[32px]">
               <TypeAnimation
                 sequence={[
-                  'Software Engineer',
+                  'Aspiring Software Engineer',
                   1000,
                   'Recent Graduate',
                   1000,
@@ -43,7 +42,9 @@ const Hero = () => {
           </a>
         </div>
         <a 
-          href="#contact"
+          href="https://drive.google.com/file/d/1MrUFQaXTO--oh9ZWt4rNB6Gecn2gldjP/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
         >
           View Resume
