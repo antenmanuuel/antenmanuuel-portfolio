@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import { Wave } from 'lucide-react';
+import { Waves } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
           <div>
             <h1 className="flex items-center justify-center gap-3 text-4xl md:text-6xl font-bold mb-4 text-primary">
-              Hi, I'm Anten Manuuel <Wave className="w-8 h-8 md:w-12 md:h-12 animate-[wave_2s_ease-in-out_infinite]" />
+              Hi, I'm Anten Manuuel <Waves className="w-8 h-8 md:w-12 md:h-12 animate-[wave_2s_ease-in-out_infinite]" />
             </h1>
             <div className="text-xl text-muted-foreground h-[32px]">
               <TypeAnimation
