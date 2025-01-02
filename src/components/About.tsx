@@ -19,9 +19,7 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg animate-fade-in [animation-delay:400ms] hover:text-foreground transition-colors">
-                I recently graduated from Stony Brook University with a degree in Computer Science. 
-                My academic journey has equipped me with strong foundations in software development, 
-                algorithms, and problem-solving.
+                I am currently pursuing a degree in Computer Science at Stony Brook University, with an expected graduation date in Spring 2025. My academic journey has equipped me with strong foundations in software development, algorithms, and problem-solving.
               </p>
               <p className="text-lg animate-fade-in [animation-delay:600ms] hover:text-foreground transition-colors">
                 During my studies, I focused on full-stack development and completed several projects 
