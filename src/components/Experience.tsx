@@ -3,6 +3,7 @@ const Experience = () => {
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "Stony Brook University",
+      gpa: "3.43/4.0",
       period: "Spring 2022 - May 2025",
       specialization: "Artificial Intelligence and Data Science",
       coursework: [
@@ -30,9 +31,10 @@ const Experience = () => {
       company: "Walgreens",
       period: "June 2024 - August 2024",
       achievements: [
-        "Developed and delivered a reconciliation reporting tool prototype using React.js, which reduced Tableau license costs by $30,000 annually. This tool enabled the Production Support team to resolve critical Pharma Reporting issues for Walgreens Specialty.",
-        "Integrated data from multiple source systems into a single, accurate report view, addressing non-functional requirements and improving report clarity and generation time by 25%. This solution introduced newer technology to the engineering team and enriched data quality.",
-        "Executed regression testing for assigned microservices using Postman, validating API reliability and ensuring seamless data sharing with major Pharma companies for metastatic assessments and medication surveys.",
+          "Delivered a reconciliation reporting tool prototype using React.js, cutting Tableau license costs by $30,000 annually and enabling the Production Support team to address critical Pharma Reporting issues.",
+          "Consolidated data from multiple source systems into a single, precise report view, meeting non-functional requirements and boosting report clarity and generation speed by 25%. This effort also introduced newer technology to the engineering team. ",
+          "Crafted intuitive, user-friendly UI mock-ups in Figma, promoting adoption among 50+ team members and encouraging collaboration across cross-functional teams.",
+          "Executed regression testing for 3+ micro-services using Postman, ensuring 95% API reliability and enabling secure, accurate data exchange with pharmaceutical partners for metastatic assessments and medication surveys."
 
       ]
     },
