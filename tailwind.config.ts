@@ -69,10 +69,31 @@ export default {
             backgroundPosition: "100% 50%",
           },
         },
+        wave: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(-20deg)" },
+          "75%": { transform: "rotate(20deg)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "slide-up": {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "fade-in": "fade-in 0.5s ease-out",
         "gradient": "gradient 15s ease infinite",
+        "wave": "wave 1.5s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "slide-up": "slide-up 0.8s ease-out",
+        "bounce-slow": "bounce-slow 2s ease-in-out infinite",
       },
     },
   },
