@@ -13,7 +13,7 @@ const Hero = () => {
             />
           </div>
           <div>
-            <h1 className="flex items-center justify-center gap-3 text-4xl md:text-6xl font-bold mb-4 text-primary">
+            <h1 className="flex items-center justify-center gap-3 text-4xl md:text-6xl font-bold mb-4 text-primary animate-pulse">
               Hi, I'm Anten Manuuel
             </h1>
             <div className="text-xl text-muted-foreground h-[32px]">
