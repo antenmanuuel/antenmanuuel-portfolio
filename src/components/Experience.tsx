@@ -26,7 +26,15 @@ const Experience = () => {
   ];
 
   const workExperience = [
+
     {
+      title: "Machine Learning Researcher",
+      company: "Stony Brook University",
+      period: "January 2025 - Present",
+      achievements: [
+      ]
+    },
+      {
       title: "Software Engineer Intern",
       company: "Walgreens",
       period: "June 2024 - August 2024",
