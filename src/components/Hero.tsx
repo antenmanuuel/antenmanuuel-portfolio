@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className="max-w-3xl mx-auto text-center px-4 relative z-10">
         <div className="flex flex-col items-center gap-6 mb-8">
-          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5 transition-all duration-500 hover:scale-105 animate-float">
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5 transition-all duration-500 hover:scale-105">
             <img
               src="/images/profile.jpg"
               alt="Profile"
