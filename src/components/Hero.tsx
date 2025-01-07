@@ -2,8 +2,17 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary/10 to-background dark:from-primary/5 dark:to-background">
-      <div className="max-w-3xl mx-auto text-center px-4">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-primary/10 to-background animate-gradient">
+        <div className="absolute inset-0 opacity-20" 
+          style={{
+            backgroundImage: 'linear-gradient(135deg, #000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #000 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #000 25%, transparent 25%) 0px 0/ 20px 20px'
+          }}>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto text-center px-4 relative z-10">
         <div className="flex flex-col items-center gap-6 mb-8">
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5 transition-all duration-500 hover:scale-105 animate-fade-in">
             <img
