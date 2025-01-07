@@ -22,7 +22,7 @@ const Hero = () => {
             />
           </div>
           <div>
-            <h1 className="flex items-center justify-center gap-3 text-4xl md:text-6xl font-bold mb-4 text-primary animate-slide-up">
+            <h1 className="flex items-center justify-center gap-3 text-4xl md:text-6xl font-bold mb-4 text-primary animate-slide-up whitespace-nowrap">
               Hi, I'm Anten Manuuel
               <span className="animate-wave inline-block">👋</span>
             </h1>
