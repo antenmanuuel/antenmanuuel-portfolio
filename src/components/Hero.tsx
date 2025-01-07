@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary/10 to-background dark:from-primary/5 dark:to-background">
       <div className="max-w-3xl mx-auto text-center px-4">
         <div className="flex flex-col items-center gap-6 mb-8">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5">
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 flex-shrink-0 bg-primary/5 transition-all duration-500 hover:scale-105 animate-fade-in">
             <img
               src="/images/profile.jpg"
               alt="Profile"
@@ -21,8 +21,8 @@ const Hero = () => {
                 sequence={[
                   'Aspiring Software Engineer',
                   1000,
-                    'Former Walgreens Software Engineer Intern',
-                    1000,
+                  'Former Walgreens Software Engineer Intern',
+                  1000,
                   'Computer Science Student',
                   1000,
                   'Full Stack Developer',
