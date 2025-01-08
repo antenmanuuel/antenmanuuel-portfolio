@@ -4,22 +4,19 @@ const Projects = () => {
       title: "Medical360",
       description: "A hospital management tool for real-time resource tracking and staff coordination. Features instant updates with Socket.IO, deployed on Heroku using CI/CD pipelines for seamless updates and high reliability.",
       technologies: ["React", "Node.js", "MongoDB", "Node.js", "Socket.io", "Heroku", "Github CI/CD"],
-      link: "https://github.com/antenmanuuel/Medical360",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      link: "https://github.com/antenmanuuel/Medical360"
     },
     {
       title: "Word Hunt",
       description: "A multiplayer word puzzle game featuring real-time chat, score tracking, and instant user retrieval with cookies. Utilizes RESTful APIs and WebSocket with Socket.IO for fast, responsive gameplay and smooth player interactions.",
       technologies: ["React.js", "Express.js", "MongoDB", "Node.js", "Heroku", "Tailwind CSS"],
-      link: "https://github.com/Ifore134/WordHunt",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+      link: "https://github.com/Ifore134/WordHunt"
     },
     {
       title: "Dev Collab Net",
       description: "A StackOverflow-inspired platform with reputation scoring, user profiles, tagging, and comments to foster community engagement. Features a scalable RESTful API for fast interactions and secure user authentication with bcrypt and custom middleware.",
       technologies: ["React.js", "Express.js", "MongoDB", "Node.js"],
-      link: "https://github.com/antenmanuuel/DevCollabNet",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+      link: "https://github.com/antenmanuuel/DevCollabNet"
     }
   ];
 
@@ -36,15 +33,12 @@ const Projects = () => {
               className="group relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in border border-border/50 backdrop-blur-sm"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                />
-                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white z-20">{project.title}</h3>
+              {/* Project Header */}
+              <div className="relative p-6 bg-gradient-to-br from-primary/10 to-primary/5">
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-20" />
+                <h3 className="relative text-2xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">
+                  {project.title}
+                </h3>
               </div>
 
               {/* Project Content */}
