@@ -43,7 +43,7 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="p-6">
-                  <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
+                  <p className="text-muted-foreground mb-4">{project.description}</p>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-4">
