@@ -36,7 +36,7 @@ const Projects = () => {
                 {/* Project Header with Floating Effect */}
                 <div className="relative p-6 bg-gradient-to-br from-primary/10 to-primary/5 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-all duration-500">
                   <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-20"/>
-                  <h3 className="relative text-2xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors animate-bounce-slow">
+                  <h3 className="relative text-2xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">
                     {project.title}
                   </h3>
                 </div>
