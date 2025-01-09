@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useToast } from "@/hooks/use-toast.ts";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -8,6 +8,7 @@ import { Mail, Phone } from "lucide-react";
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -20,9 +21,10 @@ const Contact = () => {
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
       
-      // Reset the form
-      const form = e.currentTarget as HTMLFormElement;
-      form.reset();
+      // Reset the form using the ref
+      if (formRef.current) {
+        formRef.current.reset();
+      }
       
       setIsSubmitting(false);
     }, 1000);
@@ -46,6 +48,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300 animate-fade-in">
             <form 
+              ref={formRef}
               onSubmit={handleSubmit} 
               className="space-y-6"
             >
