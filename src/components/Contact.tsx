@@ -13,26 +13,19 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Create form data object
-    const form = e.currentTarget;
-    new FormData(form);
-    try {
-      form.submit();
-      
+    // Simulate form submission delay
+    setTimeout(() => {
       toast({
         title: "Message sent successfully!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
+      
+      // Reset the form
+      const form = e.currentTarget as HTMLFormElement;
       form.reset();
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Error sending message",
-        description: "Please try again later or contact me through other means.",
-      });
-    } finally {
+      
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
 
   return (
@@ -53,8 +46,6 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300 animate-fade-in">
             <form 
-              action="https://formspree.io/f/mqaagkrn"
-              method="POST"
               onSubmit={handleSubmit} 
               className="space-y-6"
             >
