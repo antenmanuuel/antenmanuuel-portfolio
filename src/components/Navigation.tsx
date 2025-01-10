@@ -37,7 +37,6 @@ const Navigation = () => {
           {item.label}
         </a>
       ))}
-      {/* Commented out Resume link for now
       <a
         href="https://drive.google.com/file/d/1loqnHwogmhCGXY2BX_B4bd6wRp8qSHK4/view?usp=sharing"
         target="_blank"
@@ -48,7 +47,6 @@ const Navigation = () => {
         <FileText className="w-4 h-4" />
         Resume
       </a>
-      */}
     </>
   );
 
