@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
-import { FileText, Menu, X } from 'lucide-react';
+import { FileText, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navigation = () => {
@@ -55,7 +55,10 @@ const Navigation = () => {
       isScrolled ? 'bg-background/80 backdrop-blur-md shadow-md py-4' : 'bg-transparent py-6'
     }`}>
       <div className="container mx-auto flex justify-between items-center px-4">
-        <a href="#" className="text-xl font-bold text-foreground hover:scale-105 transition-transform">
+        <a 
+          href="#" 
+          className="text-xl font-bold text-foreground hover:text-primary hover:scale-105 transition-all"
+        >
           Anten Manuuel
         </a>
         

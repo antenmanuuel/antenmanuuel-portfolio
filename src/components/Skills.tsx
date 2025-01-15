@@ -23,7 +23,7 @@ const Skills = () => {
               {/* Background decoration */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <h3 className="text-xl font-semibold mb-4 text-primary relative z-10">
+              <h3 className="text-xl font-semibold mb-4 text-white relative z-10">
                 {skillGroup.category}
               </h3>
               

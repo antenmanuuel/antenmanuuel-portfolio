@@ -4,7 +4,7 @@ const Experience = () => {
       degree: "Bachelor of Science in Computer Science",
       institution: "Stony Brook University",
       gpa: "3.43/4.0",
-      period: "Spring 2022 - December 2026",
+      period: "Spring 2022 - May 2025",
       specialization: "Artificial Intelligence and Data Science",
       coursework: [
         "System Fundamentals I",

@@ -82,52 +82,52 @@ const HomePage = () => {
         </div>
       </section>
 
-<section id="work-experience" className="section-padding bg-gradient-to-b from-background to-muted/30">
-  <div className="container mx-auto max-w-4xl">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-fade-in">
-      Work Experience
-    </h2>
-    <div className="relative">
-      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30" />
-      
-      <div className="space-y-12">
-        {workExperience.map((job, index) => (
-          <div 
-            key={index}
-            className={`relative flex flex-col ${
-              index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-            } gap-8 animate-fade-in`}
-            style={{ animationDelay: `${index * 200}ms` }}
-          >
-            <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-lg shadow-primary/50" />
+      <section id="work-experience" className="section-padding bg-gradient-to-b from-background to-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-fade-in">
+            Work Experience
+          </h2>
+          <div className="relative">
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30" />
             
-            <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-              <div className="group relative bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative z-10">
-                  <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">{job.title}</h4>
-                  <p className="text-lg font-medium text-foreground/80 mb-2">{job.company}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{job.period}</p>
-                  <ul className="space-y-4">
-                    {job.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-start gap-3 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                        <span className="min-w-[6px] h-[6px] rounded-full bg-primary/70 group-hover:bg-primary transition-colors mt-2" />
-                        <span className="text-sm md:text-base">{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <div className="space-y-12">
+              {workExperience.map((job, index) => (
+                <div 
+                  key={index}
+                  className={`relative flex flex-col ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } gap-8 animate-fade-in`}
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-lg shadow-primary/50" />
+                  
+                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+                    <div className="group relative bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      
+                      <div className="relative z-10">
+                        <h4 className="text-xl font-bold text-white mb-2 group-hover:text-white/80 transition-colors">{job.title}</h4>
+                        <p className="text-lg font-medium text-white/90 mb-2">{job.company}</p>
+                        <p className="text-sm text-muted-foreground mb-4">{job.period}</p>
+                        <ul className="space-y-4">
+                          {job.achievements.map((achievement, i) => (
+                            <li key={i} className="flex items-start gap-3 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                              <span className="min-w-[6px] h-[6px] rounded-full bg-primary/70 group-hover:bg-primary transition-colors mt-2" />
+                              <span className="text-sm md:text-base">{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </div>
+                  </div>
                 </div>
-                
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       <Skills />
       <Projects />
