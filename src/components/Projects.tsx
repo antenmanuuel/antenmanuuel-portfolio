@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Dev Collab Net",
       description: "A StackOverflow-inspired platform with reputation scoring, user profiles, tagging, and comments to foster community engagement. Features a scalable RESTful API for fast interactions and secure user authentication with bcrypt and custom middleware.",
-      technologies: ["React.js", "Express.js", "MongoDB", "Node.js, JavaScript", "Tailwind CSS", "Material-UI"],
+      technologies: ["React.js", "Express.js", "MongoDB", "Node.js", "JavaScript", "Tailwind CSS", "Material-UI"],
       link: "https://github.com/antenmanuuel/DevCollabNet"
     }
   ];
