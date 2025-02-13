@@ -31,6 +31,8 @@ const Hero = () => {
                 sequence={[
                   'Aspiring Software Engineer',
                   1000,
+                  'Machine Learning Researcher',
+                  1000,
                   'Former Walgreens Software Engineer Intern',
                   1000,
                   'Computer Science Student',
@@ -54,7 +56,7 @@ const Hero = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1jRtX7qq50X8dieqP-TzZk7K9G4divmTE/view?usp=sharing"
+          href="https://drive.google.com/file/d/1CF9FJyKx6cebNXKMGeMCng2RQ-YTJ6f2/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl animate-bounce-slow"
