@@ -3,7 +3,7 @@ const Projects = () => {
     {
       title: "Medical360",
       description: "A hospital management tool for real-time resource tracking and staff coordination. Features instant updates with Socket.IO, deployed on Heroku using CI/CD pipelines for seamless updates and high reliability.",
-      technologies: ["React", "Node.js", "MongoDB", "Node.js", "Socket.io", "Heroku", "Github CI/CD", "Tailwind CSS", "JavaScript", "Material-UI"
+      technologies: ["React.js", "Node.js", "MongoDB", "Node.js", "Socket.io", "Heroku", "Github CI/CD", "Tailwind CSS", "JavaScript", "Material-UI"
       ],
       link: "https://github.com/antenmanuuel/Medical360"
     },
