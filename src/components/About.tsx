@@ -23,7 +23,7 @@ const About = () => {
               <div className="relative group p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg animate-fade-in [animation-delay:400ms]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
                 <p className="text-lg relative z-10 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  I am currently pursuing a degree in Computer Science at Stony Brook University, with an expected graduation in Spring 2026. My academic journey has equipped me with strong foundations in software engineering, algorithms, and machine learning.
+                  I am currently pursuing a degree in Computer Science at Stony Brook University, graduating this May. My academic journey has equipped me with strong foundations in software engineering, algorithms, and machine learning.
                 </p>
               </div>
               

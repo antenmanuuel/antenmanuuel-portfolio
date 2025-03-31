@@ -38,7 +38,7 @@ const Navigation = () => {
         </a>
       ))}
       <a
-        href="https://drive.google.com/file/d/1gwnh6NKIxmcAtQW3YlGr5oDdo5TpJiL7/view?usp=sharing"
+        href="https://drive.google.com/file/d/1gwnh6NKIxmcAtQW3YlGr5oDdo5TpJiL7/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 text-foreground hover:text-primary transition-all hover:scale-105 animate-fade-in"

@@ -56,7 +56,7 @@ const Hero = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1gwnh6NKIxmcAtQW3YlGr5oDdo5TpJiL7/view?usp=sharing"
+          href="https://drive.google.com/file/d/1gwnh6NKIxmcAtQW3YlGr5oDdo5TpJiL7/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl animate-bounce-slow"
