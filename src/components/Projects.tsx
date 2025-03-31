@@ -21,11 +21,11 @@ const Projects = () => {
     },
     {
       "title": "P4SBU",
-      "description": "A full-stack parking management system for Stony Brook University, optimizing space allocation using Dijkstra’s algorithm to reduce search time by 37%. Features real-time navigation with Google Maps API and secure payments via Stripe API, processing 200+ transactions monthly with a 98% success rate. Deployed on Heroku with GitHub Actions, ensuring 99.9% uptime.",
+      "description": "A full-stack parking management system for Stony Brook University, optimizing space allocation using Dijkstra's algorithm to reduce search time by 37%. Features real-time navigation with Google Maps API and secure payments via Stripe API, processing 200+ transactions monthly with a 98% success rate. Deployed on Heroku with GitHub Actions, ensuring 99.9% uptime.",
       "technologies": ["React.js", "Express.js", "MongoDB", "JavaScript", "Mapbox API", "Heroku", "GitHub Actions", "Stripe API"],
       "link": "https://github.com/antenmanuuel/p4sbu-sbu11"
     }
-    
+
   ];
 
   return (
@@ -44,7 +44,7 @@ const Projects = () => {
               {/* Project Header with Floating Effect */}
               <div className="relative p-6 bg-gradient-to-br from-primary/10 to-primary/5 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-all duration-500">
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-20" />
-                <h3 className="relative text-2xl font-bold text-white mb-2 group-hover:text-white/80 transition-colors">
+                <h3 className="relative text-2xl font-bold text-foreground mb-2 group-hover:text-foreground/80 transition-colors">
                   {project.title}
                 </h3>
               </div>
