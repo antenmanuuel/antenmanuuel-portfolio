@@ -23,26 +23,31 @@ const About = () => {
               <div className="relative group p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg animate-fade-in [animation-delay:400ms]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
                 <p className="text-lg relative z-10 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  I am currently pursuing a degree in Computer Science at Stony Brook University, with an expected graduation date in Spring 2025. My academic journey has equipped me with strong foundations in software development, algorithms, and problem-solving.
+                  I am currently pursuing a degree in Computer Science at Stony Brook University, with an expected graduation in Spring 2026. My academic journey has equipped me with strong foundations in software engineering, algorithms, and machine learning.
                 </p>
               </div>
               
               <div className="relative group p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg animate-fade-in [animation-delay:600ms]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
                 <p className="text-lg relative z-10 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  During my studies, I focused on full-stack development and completed several projects 
-                  that allowed me to apply my knowledge in real-world scenarios. I'm particularly 
-                  interested in web technologies and their potential to create impactful user experiences.
+                  Beyond full-stack development, I have a strong interest in machine learning research, particularly in natural language processing. I have worked on projects involving deep learning models, enhancing their efficiency and interpretability.
                 </p>
               </div>
               
               <div className="relative group p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg animate-fade-in [animation-delay:800ms]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
                 <p className="text-lg relative z-10 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  I'm currently seeking opportunities where I can contribute to meaningful projects 
-                  while continuing to grow as a professional developer.
+                  One of my recent projects, a BERT Attention Visualizer, enables researchers to analyze token interactions in Transformer-based models. By optimizing inference latency and API response handling, I improved processing efficiency by 20 percent.
                 </p>
               </div>
+
+              <div className="relative group p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg animate-fade-in [animation-delay:1000ms]">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
+                <p className="text-lg relative z-10 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                  I'm actively looking for opportunities where I can apply my skills in software engineering and machine learning, contributing to impactful projects that push the boundaries of technology.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>

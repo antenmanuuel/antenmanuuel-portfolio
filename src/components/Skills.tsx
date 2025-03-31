@@ -1,9 +1,11 @@
 const Skills = () => {
   const skills = [
     { category: "Programming Languages", items: ["C", "C++", "Python", "Java", "HTML", "CSS3", "JavaScript", "TypeScript", "SQL"] },
-    { category: "Frameworks/Libraries", items: ["React.js", "Node.js", "Express.js", "Spring Boot"] },
-    { category: "Tools", items: ["Git", "Docker", "Postman", "Heroku", "Monday.com", "Microsoft Azure", "Google Cloud Platform"] },
-    { category: "Database", items: ["MongoDB", "Oracle DB", "PostgreSQL"] }
+    { category: "Frameworks/Libraries", items: ["React.js", "Node.js", "Express.js", "Spring Boot", "FastAPI"] },
+    { category: "Tools", items: ["Git", "Docker", "Postman", "Heroku", "Monday.com", "Microsoft Azure", "Google Cloud Platform", "Vercel"] },
+    { category: "Database", items: ["MongoDB", "Oracle DB", "PostgreSQL"] },
+    { category: "Machine Learning", items: ["Pytorch", "Numpy", "Pandas", "Scikit-learn", "Transformers", "Hugging Face"] },
+    { category: "Other", items: ["D3.js", "Mapbox API", "Stripe API", "Socket.io", "GitHub Actions", "Tailwind CSS", "Material-UI"] }
   ];
 
   return (

@@ -8,17 +8,24 @@ const Projects = () => {
       link: "https://github.com/antenmanuuel/Medical360"
     },
     {
-      title: "Word Hunt",
-      description: "A multiplayer word puzzle game featuring real-time chat, score tracking, and instant user retrieval with cookies. Utilizes RESTful APIs and WebSocket with Socket.IO for fast, responsive gameplay and smooth player interactions.",
-      technologies: ["React.js", "Express.js", "MongoDB", "Node.js", "Heroku", "Tailwind CSS", "Socket.io", "JavaScript"],
-      link: "https://github.com/Ifore134/WordHunt"
+      title: "Bert Attention Visualizer",
+      description: "A web-based tool designed to visualize attention patterns in BERT and RoBERTa models, helping users explore how these models process and interpret text.",
+      technologies: ["React.js", "FastAPI", "D3.js", "Tailwind CSS", "Python", "JavaScript", "Vercel", "Hugging Face", "Pytorch", "Numpy", "Pandas", "Scikit-learn", "Docker", "Transformers"],
+      link: "https://github.com/Team-Lasso/bert-attention-visualizer"
     },
     {
       title: "Dev Collab Net",
       description: "A StackOverflow-inspired platform with reputation scoring, user profiles, tagging, and comments to foster community engagement. Features a scalable RESTful API for fast interactions and secure user authentication with bcrypt and custom middleware.",
       technologies: ["React.js", "Express.js", "MongoDB", "Node.js", "JavaScript", "Tailwind CSS", "Material-UI"],
       link: "https://github.com/antenmanuuel/DevCollabNet"
+    },
+    {
+      "title": "P4SBU",
+      "description": "A full-stack parking management system for Stony Brook University, optimizing space allocation using Dijkstra’s algorithm to reduce search time by 37%. Features real-time navigation with Google Maps API and secure payments via Stripe API, processing 200+ transactions monthly with a 98% success rate. Deployed on Heroku with GitHub Actions, ensuring 99.9% uptime.",
+      "technologies": ["React.js", "Express.js", "MongoDB", "JavaScript", "Mapbox API", "Heroku", "GitHub Actions", "Stripe API"],
+      "link": "https://github.com/antenmanuuel/p4sbu-sbu11"
     }
+    
   ];
 
   return (
