@@ -18,6 +18,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: 'About', href: '#about' },
+    { label: 'Club Involvement', href: '#club-involvement' },
     { label: 'Education', href: '#education' },
     { label: 'Work Experience', href: '#work-experience' },
     { label: 'Skills', href: '#skills' },

@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { ChevronUp } from "lucide-react";
 import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -9,12 +11,41 @@ import Experience from "../components/Experience";
 
 const HomePage = () => {
   const { education, workExperience } = Experience();
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <>
       <Navigation />
       <Hero />
+
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <About />
+
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <section id="education" className="section-padding bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-fade-in">
@@ -36,11 +67,6 @@ const HomePage = () => {
                   </div>
                   <div className="mt-4 md:mt-0 flex flex-col md:items-end">
                     <p className="text-muted-foreground">{edu.period}</p>
-                    {edu.gpa && (
-                      <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mt-2 group-hover:bg-primary/20 transition-colors">
-                        GPA: {edu.gpa}
-                      </span>
-                    )}
                   </div>
                 </div>
 
@@ -62,17 +88,7 @@ const HomePage = () => {
                     </ul>
                   </div>
 
-                  <div className="p-4 bg-background/50 rounded-lg border border-border/30">
-                    <h5 className="text-lg font-semibold text-primary mb-3">Activities</h5>
-                    <ul className="space-y-2">
-                      {edu.activities.map((activity, i) => (
-                        <li key={i} className="flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-colors">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary/70 group-hover:bg-primary transition-colors" />
-                          <span>{activity}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  
                 </div>
 
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -82,15 +98,21 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <section id="work-experience" className="section-padding bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-fade-in">
             Work Experience
           </h2>
           <div className="relative">
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/30" />
+            {/* Timeline line with gradient effect */}
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary/10 via-primary/40 to-primary/10 rounded-full" />
 
-            <div className="space-y-12">
+            <div className="space-y-16">
               {workExperience.map((job, index) => (
                 <div
                   key={index}
@@ -98,7 +120,10 @@ const HomePage = () => {
                     } gap-8 animate-fade-in`}
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
-                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-lg shadow-primary/50" />
+                  {/* Timeline dot with pulse effect */}
+                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-primary rounded-full shadow-lg shadow-primary/50 z-10">
+                    <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-30"></div>
+                  </div>
 
                   <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
                     <div className="group relative bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] overflow-hidden">
@@ -128,9 +153,35 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <Skills />
+
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <Projects />
+
+      {/* Section divider */}
+      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
+      </div>
+
       <Contact />
+
+      {/* Scroll to top button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed right-6 bottom-6 p-3 rounded-full bg-primary/90 backdrop-blur-sm text-primary-foreground shadow-lg transition-all duration-300 z-50 
+          ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+      >
+        <ChevronUp className="w-6 h-6" />
+      </button>
     </>
   );
 };
