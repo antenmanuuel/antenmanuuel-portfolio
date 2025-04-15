@@ -34,17 +34,11 @@ const HomePage = () => {
       <Navigation />
       <Hero />
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <About />
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <section id="education" className="section-padding bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto max-w-4xl">
@@ -88,7 +82,7 @@ const HomePage = () => {
                     </ul>
                   </div>
 
-                  
+
                 </div>
 
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -98,10 +92,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <section id="work-experience" className="section-padding bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto max-w-4xl">
@@ -153,24 +144,15 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <Skills />
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <Projects />
 
-      {/* Section divider */}
-      <div className="w-full h-24 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
-      </div>
+
 
       <Contact />
 
